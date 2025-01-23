@@ -1,0 +1,71 @@
+
+{
+  // UI and Theme Settings
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": "single", // Hide tabs above the editor
+  "workbench.statusBar.visible": false, // Hide status bar
+
+  // Remove Title Bar and UI Elements
+  "window.titleBarStyle": "custom", // Set to "custom" to remove title bar
+  "window.menuBarVisibility": "toggle", // Hide the menu bar by default
+  "workbench.layoutControl.enabled": false, // Hide the activity bar (left sidebar icons)
+  "terminal.integrated.tabs.enabled": false, // Hide terminal tabs
+
+  // Editor Settings
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "Dank Mono, JetBrainsMono Nerd Font, monospace",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.5,
+  "editor.wordWrap": "on",
+
+  // Color Customizations
+  "workbench.colorCustomizations": {
+    "editor.background": "#313445",
+    "sideBar.background": "#313445", // Same color as the editor background
+    "sideBarSectionHeader.background": "#313445", // Match sidebar section header
+    "sideBar.border": "#636973", // Subtle border to differentiate sidebar
+    "terminal.background": "#313445",
+    "editorLineNumber.foreground": "#58637466",
+    "scrollbarSlider.background": "#6b6f87",
+    "tab.activeBorderTop": "#636973", // Same border as sidebar for tabs
+    "sideBarSectionHeader.border": "#636973" // Add border to sidebar section header
+  },
+
+  // Explorer Settings
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+
+  // File Settings
+  "files.autoSave": "afterDelay",
+
+  // Git and SCM Settings
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+
+  // Terminal Settings
+  "terminal.integrated.fontFamily": "Dank Mono, JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 0,  
+
+  // Extensions and Recommendations
+  "extensions.ignoreRecommendations": true,
+
+  // Custom Stylesheet
+  "apc.stylesheet": {
+    ".editor .title": "background: transparent !important;",
+    ".editor:hover .scrollbar .slider": "visibility: initial;",
+    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff);",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+    ".side-bar .section": "border-right: 2px solid #636973;" // Add a subtle border to sidebar sections
+  },
+  "workbench.activityBar.location": "hidden"
+}
+ 
