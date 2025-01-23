@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", "sans-serif";
+  }
+
+  body {
+    background-color: #121212;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-black text-white p-2 rounded my-1 hover:bg-gray-800;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .icon-btn:hover {
+    color: #BB86FC;
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+
+  .btn-custom {
+    @apply flex items-center justify-center rounded-2xl text-white;
+    width: 4rem; /* 16 / 4 = 4rem */
+    height: 4rem; /* 16 / 4 = 4rem */
+    background-color: #BB86FC;
+  }
+
+  .btn-custom:hover {
+    background-color: #9852d6; /* Optional: a darker shade for hover */
+  }
+
+  .bg-opacity-7 {
+    background-color: rgba(18, 18, 18, 0.07);
+  }
+}
